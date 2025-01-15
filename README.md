@@ -57,9 +57,20 @@ The raw scraped data was imported into Microsoft Excel for cleaning and formatti
 
 ### 2. Replacing Missing or Inconsistent Data:
  - Replaced missing values with appropriate defaults or placeholders.
- - Standardized inconsistent data entries (e.g., formatting author names and price fields). 
+ - Standardized inconsistent data entries (e.g., formatting author names and price fields).
 
+### 3. Formatting:
+ - Ensured proper data types for each column (e.g., numeric for price and pages, text for title and author).
+ - Formatted the data into a clean and user-friendly layout.
+### 4. Validation:
+ - Cross-checked the cleaned data for accuracy and completeness.
 
+### 3. File Structure
+- books_data.csv: Output file containing the scraped data.
+- my_agent.txt: File containing the user agent string for HTTP requests.
+- Python Script: Contains the code for scraping and saving data. 
 
-
-
+## 4. Future Work
+- Automate data cleaning using Python.
+- Enhance scraping logic to handle dynamic content using selenium.
+- Add visualization and analysis of scraped data in a Jupyter Notebook.
