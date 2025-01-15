@@ -67,7 +67,6 @@ The raw scraped data was imported into Microsoft Excel for cleaning and formatti
 
 ### 3. File Structure
 - books_data.csv: Output file containing the scraped data.
-- my_agent.txt: File containing the user agent string for HTTP requests.
 - Python Script: Contains the code for scraping and saving data. 
 
 ## 4. Future Work
