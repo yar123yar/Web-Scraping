@@ -14,6 +14,21 @@ The Flipkart Book Data Scraper is designed to collect extensive book-related inf
 - Error Handling: Implements robust error handling to ensure continuity in case of network issues or missing data.
 - Data Cleaning: After scraping, the data is processed in Excel to remove duplicates, replace missing values, and format the data for analysis
 
+# Workflow
 
+## 1. Scraping Process
 
+### Libraries Used
+- requests for fetching webpage content.
+- BeautifulSoup from bs4 for parsing HTML content.
+- pandas for storing and organizing data.
+- 
+## 2. Steps in Scraping
+## 1. Initialization:
+- Define the base URL for Flipkart's book search.
+- Load the user agent string from a text file for better emulation of browser requests.
+
+## 2. Page Navigation:
+- Iterate over the pages of Flipkart's search results.
+- Validate the page's accessibility using a custom check_link function.
 
