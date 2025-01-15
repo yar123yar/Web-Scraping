@@ -16,19 +16,50 @@ The Flipkart Book Data Scraper is designed to collect extensive book-related inf
 
 # Workflow
 
-## 1. Scraping Process
+## 1.Scraping Process
 
 ### Libraries Used
 - requests for fetching webpage content.
 - BeautifulSoup from bs4 for parsing HTML content.
 - pandas for storing and organizing data.
-- 
-## 2. Steps in Scraping
-## 1. Initialization:
+
+## 2.Steps in Scraping
+### 1. Initialization:
 - Define the base URL for Flipkart's book search.
 - Load the user agent string from a text file for better emulation of browser requests.
 
-## 2. Page Navigation:
+### 2.Page Navigation:
 - Iterate over the pages of Flipkart's search results.
 - Validate the page's accessibility using a custom check_link function.
+
+### 3.Data Extraction:
+- For each book on a page, extract relevant data fields using BeautifulSoup:
+ - 1. Title
+ - 2. Price
+ - 3. Author
+ - 4. Rating
+ - 5. Description
+ - 6. Highlights (Publisher, Pages, Edition, Genre, Language, Binding)
+ - 7. Services (Return Policy, Payment Policy)
+  -8. Store the extracted data in a structured dictionary
+
+### 4. Data Storage:
+  - Append all book data to a list and save it as a CSV file using pandas.
+
+### Rate Limiting:
+  - Introduce a delay (time.sleep) between page requests to prevent overwhelming the server.
+
+## 3.Data Cleaning in Excel
+The raw scraped data was imported into Microsoft Excel for cleaning and formatting. Below are the steps performed:
+
+### 1.Removing Duplicates:
+ - Identified and removed duplicate rows to ensure each book entry is unique.
+
+### 2. Replacing Missing or Inconsistent Data:
+ - Replaced missing values with appropriate defaults or placeholders.
+ - Standardized inconsistent data entries (e.g., formatting author names and price fields). 
+
+
+
+
 
